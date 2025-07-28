@@ -1,6 +1,36 @@
 {
+  "name": "cyberguard",
+  "version": "1.0.0",
+  "description": "A gamified cybersecurity awareness battle game",
+  "main": "index.js",
+  "scripts": {
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "cd backend && npm start",
+    "client": "cd frontend && npm start",
+    "build": "cd frontend && npm run build",
+    "install-deps": "npm install && cd frontend && npm install && cd ../backend && npm install",
+    "heroku-postbuild": "cd frontend && npm install && npm run build"
+  },
+  "keywords": [
+    "cybersecurity",
+    "education",
+    "game",
+    "quiz",
+    "react",
+    "nodejs",
+    "firebase"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/cyberguard.git"
+  },
   "dependencies": {
     "@google/generative-ai": "^0.24.1",
     "firebase": "^11.10.0"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
   }
 }

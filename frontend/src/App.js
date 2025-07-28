@@ -353,11 +353,11 @@ function App() {
           <div className="hero-overlay"></div>
           <div className="hero-content">
 
-            <h1 className="hero-title-standard">Sense Hacker</h1>
+            <h1 className="hero-title-standard">Cyberguard</h1>
             <p className="hero-desc-standard">Gamified Cybersecurity Awareness Battle</p>
             <div className="hero-why">
               <h2>Why Play This Game?</h2>
-              <p>Cyber threats are everywhere, and most attacks succeed because of simple human mistakes. <b>Sense Hacker</b> helps you spot and stop common scams, phishing, and social engineering tricks—while having fun! Sharpen your digital instincts and become your own best defense.</p>
+              <p>Cyber threats are everywhere, and most attacks succeed because of simple human mistakes. <b>Cyberguard</b> helps you spot and stop common scams, phishing, and social engineering tricks—while having fun! Sharpen your digital instincts and become your own best defense.</p>
             </div>
             <div style={{ display: 'flex', flexDirection: 'column', gap: 16, alignItems: 'center', marginBottom: 16 }}>
               {!user && (
@@ -403,7 +403,7 @@ function App() {
             <div className="game-header-bar">
               <div className="header-left">
 
-                <div className="header-title-glow">Sense Hacker Quiz</div>
+                <div className="header-title-glow">Cyberguard Quiz</div>
                 <div className="header-round">Round <span>{round}</span></div>
                 <div className="header-question">Q <span>{questionNum}/{QUESTIONS_PER_ROUND}</span></div>
                 <div className="header-points">Points <span>{points}</span></div>
